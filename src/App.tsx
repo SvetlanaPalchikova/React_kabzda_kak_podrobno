@@ -3,6 +3,7 @@ import './App.css';
 import {Accordion} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 import {OnOff} from './components/OnOff/OnOff'
+import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
 function hello() {
     alert("Hello IT-KAMASUTRA")
 }
@@ -11,9 +12,10 @@ function App() {
     console.log("App rendering")
     return (
         <div>
-            <OnOff on={false}/>
-            <OnOff on={true}/>
-            <OnOff on={false}/>
+            <OnOff/>
+
+            <UncontrolledAccordion titleValue={'Menu'}/>
+            <UncontrolledAccordion titleValue={'Users'}/>
             {/*<Accordion titleValue={"Menu"} collapsed={true}/>*/}
             {/*<Accordion titleValue={"Users"} collapsed={false}/>*/}
             {/*<Rating value={1}/>*/}
