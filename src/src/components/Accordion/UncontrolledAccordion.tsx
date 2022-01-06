@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 type AccordionPropsType = {
     titleValue: string
+    //collapsed: boolean
 }
 
 export function UncontrolledAccordion(props: AccordionPropsType) {

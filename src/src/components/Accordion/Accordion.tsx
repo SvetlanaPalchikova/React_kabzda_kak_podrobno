@@ -1,6 +1,6 @@
 import React from "react";
 
-export type AccordionPropsType = {
+type AccordionPropsType = {
     titleValue: string,
     collapsed: boolean
     onChange:()=> void
